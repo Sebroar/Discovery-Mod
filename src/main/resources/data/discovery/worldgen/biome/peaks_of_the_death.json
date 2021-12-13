@@ -1,0 +1,70 @@
+{
+  "scale": 0.4,
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "sky_color": 394542,
+    "fog_color": 262966,
+    "water_color": 262702,
+    "water_fog_color": 657472
+  },
+  "surface_builder": "discovery:grimlands_mountains",
+  "carvers": {
+    "air": [
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    [
+      //raw gen
+    ],
+    [
+      //lakes
+    ],
+    [
+      //local modifications (rocks, icebergs...)
+    ],
+    [
+      //underground structures
+    ],
+    [
+      //surface structures
+    ],
+    [
+      //strongholds
+    ],
+    [
+      //ores
+      "discovery:abyssium_ore"
+    ],
+    [
+      //underground decorations
+    ],
+    [
+      //vegetal decorations
+    ],
+    [
+      //top layer modifications (ice)
+    ]
+  ],
+  "starts": [],
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false,
+  "precipitation": "none",
+  "temperature": 0.2,
+  "downfall": 0.0,
+  "category": "none",
+  "depth": 2.0
+}

@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "Name": "discovery:grimstone"
+    },
+    "under_material": {
+      "Name": "discovery:grimstone"
+    },
+    "underwater_material": {
+      "Name": "discovery:grimstone"
+    }
+  },
+  "type": "minecraft:default"
+}

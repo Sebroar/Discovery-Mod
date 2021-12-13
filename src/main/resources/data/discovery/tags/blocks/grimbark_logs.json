@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "discovery:grimbark_log",
+    "discovery:grimbark_wood",
+    "discovery:stripped_grimbark_log",
+    "discovery:stripped_grimbark_wood"
+  ]
+}

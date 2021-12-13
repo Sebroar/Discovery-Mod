@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "discovery:grimbark_planks"
+    }
+  },
+  "result": {
+    "item": "discovery:grimbark_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "discovery:grimbark_logs"
+    }
+  ],
+  "result": {
+    "item": "discovery:grimbark_planks",
+    "count": 4
+  }
+}

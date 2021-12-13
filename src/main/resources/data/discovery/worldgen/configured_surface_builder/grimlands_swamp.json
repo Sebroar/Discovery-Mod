@@ -1,0 +1,17 @@
+{
+  "config": {
+    "top_material": {
+      "Properties": {
+        "snowy": "false"
+      },
+      "Name": "discovery:grim_grass"
+    },
+    "under_material": {
+      "Name": "discovery:grim_dirt"
+    },
+    "underwater_material": {
+      "Name": "discovery:grimstone"
+    }
+  },
+  "type": "minecraft:swamp"
+}

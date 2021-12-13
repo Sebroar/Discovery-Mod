@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "discovery:grimbark_planks"
+    }
+  },
+  "result": {
+    "item": "discovery:grimbark_trapdoor",
+    "count": 2
+  }
+}
