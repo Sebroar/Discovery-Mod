@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "discovery:block/stripped_grimbark_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "discovery:block/stripped_grimbark_wood"
+    },
+    "axis=z": {
+      "model": "discovery:block/stripped_grimbark_wood",
+      "x": 90
+    }
+  }
+}

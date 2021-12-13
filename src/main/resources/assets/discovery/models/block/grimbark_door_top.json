@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "discovery:block/grimbark_door_top",
+    "bottom": "discovery:block/grimbark_door_bottom"
+  }
+}

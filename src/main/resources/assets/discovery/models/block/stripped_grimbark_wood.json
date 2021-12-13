@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "discovery:block/stripped_grimbark_log_side",
+    "side": "discovery:block/stripped_grimbark_log_side"
+  }
+}

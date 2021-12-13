@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle":"discovery:block/grim_dirt",
+    "bottom": "discovery:block/grim_dirt",
+    "top": "discovery:block/grim_grass_top",
+    "side": "discovery:block/grim_grass_side"
+  }
+}

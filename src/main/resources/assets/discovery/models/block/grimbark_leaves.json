@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "discovery:block/grimbark_leaves"
+  }
+}

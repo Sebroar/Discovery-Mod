@@ -1,0 +1,62 @@
+{
+  //Blocks
+  "block.discovery.grimstone": "Grimstone",
+  "block.discovery.grimstone_slab": "Grimstone Slab",
+  "block.discovery.grimstone_stairs": "Grimstone Stairs",
+  "block.discovery.grimstone_wall": "Grimstone Wall",
+  
+  "block.discovery.grim_dirt": "Grim Dirt",
+  "block.discovery.grim_grass": "Grim Grass",
+  "block.discovery.grimbark_log": "Grimbark Log",
+  "block.discovery.grimbark_wood": "Grimbark Wood",
+  "block.discovery.stripped_grimbark_log": "Stripped Grimbark Log",
+  "block.discovery.stripped_grimbark_wood": "Stripped Grimbark Wood",
+  "block.discovery.grimbark_planks": "Grimbark Planks",
+  "block.discovery.grimbark_slab": "Grimbark Slab",
+  "block.discovery.grimbark_stairs": "Grimbark Stairs",
+  "block.discovery.grimbark_door": "Grimbark Door",
+  "block.discovery.grimbark_trapdoor": "Grimbark Trapdoor",
+  "block.discovery.grimbark_button": "Grimbark Button",
+  "block.discovery.grimbark_pressure_plate": "Grimbark Pressure Plate",
+  "block.discovery.grimbark_fence": "Grimbark Fence",
+  "block.discovery.grimbark_fence_gate": "Grimbark Fence Gate",
+  "block.discovery.grimbark_sapling": "Grimbark Sapling",
+  "block.discovery.grimbark_leaves": "Grimbark Leaves",
+  
+  "block.discovery.abyssium_ore": "Abyssium Ore",
+  "block.discovery.abyssium_block": "Abyssium Block",
+  "block.discovery.darklip": "Darklip",
+  "block.discovery.purification_altar_energy_provider": "Purification Altar Energy Provider",
+  "block.discovery.purification_altar" : "Purification Altar Block",
+  "block.discovery.purification_altar_bricks": "Purification Altar Bricks",
+  
+  //Items
+  "item.discovery.chisel": "Chisel",
+  "item.discovery.abyssium": "Abyssium",
+  "item.discovery.abyssium_sword": "Abyssium Sword",
+  "item.discovery.abyssium_axe": "Abyssium Axe",
+  "item.discovery.abyssium_pickaxe": "Abyssium Pickaxe",
+  "item.discovery.abyssium_shovel": "Abyssium Shovel",
+  "item.discovery.abyssium_hoe": "Abyssium Hoe",
+  "item.discovery.abyssium_helmet": "Abyssium Helmet",
+  "item.discovery.abyssium_chestplate": "Abyssium Chestplate",
+  "item.discovery.abyssium_leggings": "Abyssium Leggings",
+  "item.discovery.abyssium_boots": "Abyssium Boots",
+  "item.discovery.purified_abyssium": "Purified Abyssium",
+  "item.discovery.purified_abyssium_sword": "Purified Abyssium Sword",
+  
+  //Potions
+  "item.discovery.potion.darklip_extract": "Darklip Extract",
+  "item.discovery.potion.purification": "Potion of Purification",
+  
+  //Effects
+  "effect.discovery.corruption": "Corruption",
+  "effect.discovery.purification": "Purification",
+  
+  //Creative Tabs
+  "itemGroup.discoveryGenBlocksTab": "Discovery Generation Blocks",
+  "itemGroup.discoveryConstructionBlocksTab": "Discovery Construction Blocks",
+  "itemGroup.discoveryItems": "Discovery Items",
+  "itemGroup.discoveryTools": "Discovery Tools",
+  "itemGroup.discoveryCombat": "Discovery Combat"
+}

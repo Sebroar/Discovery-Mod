@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "discovery:block/grimbark_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "discovery:block/grimbark_log"
+    },
+    "axis=z": {
+      "model": "discovery:block/grimbark_log_horizontal",
+      "x": 90
+    }
+  }
+}

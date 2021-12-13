@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "discovery:block/grimbark_slab"
+    },
+    "type=double": {
+      "model": "discovery:block/grimbark_planks"
+    },
+    "type=top": {
+      "model": "discovery:block/grimbark_slab_top"
+    }
+  }
+}
