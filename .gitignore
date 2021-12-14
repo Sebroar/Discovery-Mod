@@ -4,5 +4,6 @@
 bin
 build
 run
-*.launch
-*.launch
+.project
+ForgeGradle-5.1.22.jar
+*.txt
