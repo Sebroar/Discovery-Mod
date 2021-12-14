@@ -1,0 +1,19 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.projects
+
+# forge
+ForgeGradle-5.1.22
+LICENSE
+README
+CREDITS
+changelog
+
+# other
+bin
+build
+run

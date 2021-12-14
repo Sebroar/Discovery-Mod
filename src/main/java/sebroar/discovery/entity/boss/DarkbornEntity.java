@@ -11,6 +11,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -24,6 +25,8 @@ import net.minecraft.world.Explosion.Mode;
 import net.minecraft.world.World;
 import sebroar.discovery.entity.AbstractCorruptedEntity;
 import sebroar.discovery.entity.DiscoveryEntityAttribute;
+import sebroar.discovery.entity.DiscoveryEntityType;
+import sebroar.discovery.entity.projectile.DarknessDartEntity;
 
 public class DarkbornEntity extends AbstractCorruptedEntity implements IRangedAttackMob {
 	private boolean isFirstPhaseFinished;
@@ -52,7 +55,7 @@ public class DarkbornEntity extends AbstractCorruptedEntity implements IRangedAt
 		return super.hurt(source, reducedAmount);
 	}
 	public static AttributeModifierMap.MutableAttribute setAttributes() {
-		return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 1000).add(Attributes.ATTACK_DAMAGE, 15);
+		return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 500).add(Attributes.ATTACK_DAMAGE, 15);
 	}
 	public DarkbornEntity secondPhaseReached() {
 		if (!this.isFirstPhaseFinished) {
@@ -63,9 +66,10 @@ public class DarkbornEntity extends AbstractCorruptedEntity implements IRangedAt
 	}
 	@Override
 	public void tick() {
+		if (this.getHealth() <= 200) secondPhaseReached();
 		this.setInvulnerable(eventTime >= 0);
 		BlockPos pos = this.blockPosition();
-		if (this.eventTime > 1) {
+		if (this.eventTime > 0) {
 			List<LivingEntity> nearbyEntities = this.level.getNearbyEntities(null, EntityPredicate.DEFAULT, this, new AxisAlignedBB(pos.getX() - 32, pos.getY() - 32, pos.getZ() - 32, pos.getX() + 32, pos.getY() + 32, pos.getZ() + 32));
 			for (LivingEntity entity : nearbyEntities) {
 				BlockPos pos1 = entity.blockPosition();
@@ -87,5 +91,30 @@ public class DarkbornEntity extends AbstractCorruptedEntity implements IRangedAt
 	}
 	@Override
 	public void performRangedAttack(LivingEntity p_82196_1_, float p_82196_2_) {
+	}
+	static class DarkbornRangedAttackGoal extends Goal {
+		private final DarkbornEntity entity;
+		private int attackTime;
+		public DarkbornRangedAttackGoal(DarkbornEntity entity) {
+			this.entity = entity;
+		}
+		@Override
+		public boolean canUse() {
+			LivingEntity livingEntity = this.entity.getTarget();
+			return livingEntity != null && livingEntity.isAlive() && this.entity.canAttack(livingEntity);
+		}
+		@Override
+		public void start() {
+			this.attackTime = 100;
+		}
+		@Override
+		public void tick() {
+			if (this.attackTime > 0) {
+				--this.attackTime;
+			} else {
+				this.attackTime = 100;
+				this.entity.level.addFreshEntity(new DarknessDartEntity(DiscoveryEntityType.DARKNESS_DART.get(), this.entity, this.entity.level, this.entity.getRandom().nextGaussian(), 0.3d, this.entity.getRandom().nextGaussian()));
+			}
+		}
 	}
 }
