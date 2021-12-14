@@ -12,3 +12,6 @@ changelog
 bin
 build
 run
+ForgeGradle-5.1.22.jar
+*.txt
+.project
