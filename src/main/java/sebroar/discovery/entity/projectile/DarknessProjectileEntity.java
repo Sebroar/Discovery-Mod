@@ -23,9 +23,6 @@ public class DarknessProjectileEntity extends DamagingProjectileEntity {
 			}
 		}
 	}
-	protected DarknessProjectileEntity(EntityType<? extends DarknessProjectileEntity> entityType, LivingEntity entity, World world, double x, double y, double z) {
-		super(entityType, entity, x, y, z, world);
-	}
 	@Override
 	protected void onHitEntity(EntityRayTraceResult rayTraceResult) {
 		if (rayTraceResult.getEntity() instanceof LivingEntity) {
