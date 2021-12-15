@@ -1,9 +1,11 @@
-
+bin
+.settings
+.metadata
 .classpath
-.settings/org.eclipse.jdt.core.prefs
+.project
+changelog
 bin
 build
 run
-.project
-ForgeGradle-5.1.22.jar
 *.txt
+ForgeGradle-5.1.22.jar
