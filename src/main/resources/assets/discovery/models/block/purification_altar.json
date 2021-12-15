@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle":"discovery:block/purification_altar_side",
+    "bottom": "discovery:block/purification_altar_bottom",
+    "top": "discovery:block/purification_altar_top",
+    "side": "discovery:block/purification_altar_side"
+  }
+}
