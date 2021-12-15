@@ -54,7 +54,7 @@ public class DiscoveryItems {
 	public static final RegistryObject<Item> ABYSSIUM_LEGGINGS = registerItem("abyssium_leggings", () -> new ArmorItem(DiscoveryArmorMaterial.ABYSSIUM, EquipmentSlotType.LEGS, new Item.Properties().tab(DiscoveryTabs.DISCOVERY_COMBAT)));
 	public static final RegistryObject<Item> ABYSSIUM_BOOTS = registerItem("abyssium_boots", () -> new ArmorItem(DiscoveryArmorMaterial.ABYSSIUM, EquipmentSlotType.FEET, new Item.Properties().tab(DiscoveryTabs.DISCOVERY_COMBAT)));
 	public static final RegistryObject<Item> PURIFIED_ABYSSIUM = registerItem("purified_abyssium", () -> new Item(new Item.Properties().tab(DiscoveryTabs.DISCOVERY_ITEMS)));
-	public static final RegistryObject<Item> PURIFIES_ABYSSIUM_SWORD = registerItem("purified_abyssium_sword", () -> new SwordItem(DiscoveryItemTier.PURIFIED_ABYSSIUM, SWORD_DAMAGE, SWORD_SPEED, new Item.Properties().tab(DiscoveryTabs.DISCOVERY_COMBAT)));
+	public static final RegistryObject<Item> PURIFIED_ABYSSIUM_SWORD = registerItem("purified_abyssium_sword", () -> new SwordItem(DiscoveryItemTier.PURIFIED_ABYSSIUM, SWORD_DAMAGE, SWORD_SPEED, new Item.Properties().tab(DiscoveryTabs.DISCOVERY_COMBAT)));
 	
 	private static <T extends Item>RegistryObject<T> registerItem(String name, Supplier<T> supplier) {
 		RegistryObject<T> item = ITEMS.register(name, supplier);

@@ -1,6 +1,7 @@
 package sebroar.discovery.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -10,11 +11,16 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import sebroar.discovery.common.registry.DiscoveryPotions;
 
 public class PurificationAltarEnergyProviderBlock extends Block {
 	private boolean isCharged;
+	protected static final VoxelShape SHAPE = VoxelShapes.box(0.125, 0.0, 0.125, 0.875, 0.875, 0.875);
 	
 	public PurificationAltarEnergyProviderBlock(Properties properties) {
 		super(properties);
@@ -33,5 +39,13 @@ public class PurificationAltarEnergyProviderBlock extends Block {
 			this.setCharged(true);
 			return ActionResultType.SUCCESS;
 		} else return ActionResultType.PASS;
+	}
+	@Override
+	public BlockRenderType getRenderShape(BlockState state) {
+		return BlockRenderType.MODEL;
+	}
+	@Override
+	public VoxelShape getShape(BlockState state, IBlockReader reader, BlockPos pos, ISelectionContext context) {
+		return SHAPE;
 	}
 }

@@ -15,7 +15,7 @@ public enum DiscoveryItemTier implements IItemTier{
 	PURIFIED_ABYSSIUM(6, 3254, 10.0f, 6f, 20, () -> {
 		return Ingredient.of(DiscoveryItems.PURIFIED_ABYSSIUM.get());
 	}),
-	CHISEL(0, 255, 0, 0, 1, () ->{
+	CHISEL(0, 255, 1.2f, 2, 1, () ->{
 		return Ingredient.of(Items.IRON_INGOT);
 	});
 	
