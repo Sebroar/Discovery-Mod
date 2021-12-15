@@ -2,15 +2,10 @@ bin
 .settings
 .metadata
 .classpath
-.projects
-ForgeGradle-5.1.22
-LICENSE
-README
-CREDITS
+.project
 changelog
 bin
 build
 run
-ForgeGradle-5.1.22.jar
 *.txt
-.project
+ForgeGradle-5.1.22.jar

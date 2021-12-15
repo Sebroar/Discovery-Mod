@@ -26,6 +26,7 @@ import sebroar.discovery.block.*;
 import sebroar.discovery.block.DiscoveryGrassBlock;
 import sebroar.discovery.block.material.DiscoveryMaterial;
 import sebroar.discovery.block.trees.GrimbarkTree;
+import sebroar.discovery.item.DiscoveryToolType;
 import sebroar.discovery.item.itemgroups.DiscoveryTabs;
 
 @SuppressWarnings("unused")
@@ -63,7 +64,7 @@ public class DiscoveryBlocks {
 		return 3;
 	})), DiscoveryTabs.DISCOVERY_GENERATION_BLOCKS);
 	
-	public static final RegistryObject<Block> ABYSSIUM_ORE = registerBlock("abyssium_ore", () -> new Block(properties(Material.STONE, MaterialColor.TERRACOTTA_CYAN).strength(3f, 12.5f)), DiscoveryTabs.DISCOVERY_GENERATION_BLOCKS);
+	public static final RegistryObject<Block> ABYSSIUM_ORE = registerBlock("abyssium_ore", () -> new Block(properties(DiscoveryMaterial.CHISELABLE_STONE, MaterialColor.TERRACOTTA_CYAN).strength(3f, 12.5f).harvestTool(DiscoveryToolType.CHISEL).requiresCorrectToolForDrops()), DiscoveryTabs.DISCOVERY_GENERATION_BLOCKS);
 	public static final RegistryObject<Block> ABYSSIUM_BLOCK = registerBlock("abyssium_block", () -> new Block(properties(Material.METAL, MaterialColor.COLOR_RED).strength(4.5f, 14f).harvestTool(ToolType.PICKAXE).harvestLevel(3).requiresCorrectToolForDrops()), DiscoveryTabs.DISCOVERY_CONSTUCTION_BLOCKS);
 	
 	public static final RegistryObject<Block> PURIFICATION_ALTAR_ENERGY_PROVIDER = registerBlock("purification_altar_energy_provider", () -> new PurificationAltarEnergyProviderBlock(properties(DiscoveryMaterial.PURIFICATION_ALTAR, MaterialColor.DIAMOND).strength(-1.0f, 3600000.0f).noDrops().isValidSpawn(DiscoveryBlocks::never)), DiscoveryTabs.DISCOVERY_CONSTUCTION_BLOCKS);
